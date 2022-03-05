@@ -32,6 +32,7 @@ html {
 p {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
+    font-weight: 300;
     line-height: 29px;
     color: #fff;
 }
@@ -154,6 +155,7 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 1%;
 }
 
 .aboutInfo p {
@@ -161,20 +163,22 @@ h2 {
     font-size: 2rem;
 }
 
-.aboutInfo button {
-    width: 25%;
+.aboutInfo button,
+.blog button {
+    width: 30%;
 }
 
 /* latest Collection styling */
 
-.latestCollection {
+.latestCollection,
+.blog {
     background-color: #201e21;
-    padding-top: 5%;
 }
 
 .latestCollection h2 {
     text-align: center;
     margin-top: 0;
+    padding-top: 5%;
 }
 
 .latestCollection ul {
@@ -201,7 +205,7 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    justify-content: space-between;
+    flex-basis: 32%;
 }
 
 .catalogueLink i,
@@ -221,4 +225,24 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 0;
+    text-align: center;
 } 
+
+/* blog section styling */
+.blogOne,
+.blogTwo {
+    display: flex;
+}
+
+.blogOneImage,
+.blogTwoImage {
+    flex-basis: 50%;
+    object-fit: cover;
+}
+
+.blogOneInfo,
+.blogTwoInfo {
+    flex-basis: 50%;
+    padding: 5% 0 0 5%;
+}
+
