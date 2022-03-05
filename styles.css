@@ -29,10 +29,34 @@ html {
     margin: 0 auto;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+button {
+    background-color: #14171f;
+    border: 1px solid #faba63;
+    font-family: 'Italiana', serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 29px;
+    margin-top: 3%;
+}
+
 /* header styling */
 
 header {
-    height: 700px;
+    height: 600px;
     position: relative;
 }
 
@@ -40,7 +64,6 @@ header {
     background-image: url(https://psd.hackeryou.com/assignment1-assets/arora/asset-3.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    /* background-attachment: fixed; */
 }
 
 .navMain ul {
@@ -105,6 +128,7 @@ i {
 /* about section */
 .about {
     background-color: #14171f;
+    margin: 5% 0;
 }
 
 .aboutParent {
@@ -112,16 +136,50 @@ i {
 }
 
 .aboutImage {
-    flex-basis: 10%;
-    margin-right: 10%;
-}
-
-.aboutImage img {
-    height: 400px;
+    flex-basis: 25%;
+    margin-right: 5%;
+    align-self: center;
 }
 
 .aboutInfo {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 75%;
+}
+
+h2 {
+    font-family: 'Italiana', serif;
+    font-size: 5.1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.aboutInfo p {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.aboutInfo button {
+    width: 25%;
+}
+
+.latestCollection {
+    background-color: #201e21;
+    padding-top: 5%;
+}
+
+.latestCollection h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.latestCollection ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latestCollection li {
+    flex-basis: 32%;
+    margin-bottom: 5%;
 }
