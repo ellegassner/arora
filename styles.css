@@ -15,6 +15,10 @@ p {
     padding: 0;
 }
 
+body {
+    background-color: #14171f;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -25,8 +29,10 @@ html {
     margin: 0 auto;
 }
 
+/* header styling */
+
 header {
-    height: 100vh;
+    height: 700px;
     position: relative;
 }
 
@@ -34,8 +40,7 @@ header {
     background-image: url(https://psd.hackeryou.com/assignment1-assets/arora/asset-3.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center-top;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .navMain ul {
@@ -68,6 +73,7 @@ header {
 h1 {
     font-family: 'Italiana', serif;
     font-size: 16.2rem;
+    text-transform: uppercase;
     color: #fff;
     line-height: 140.4px;
     flex-basis: 40%;
@@ -86,7 +92,7 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     right: 3%;
 }
 
@@ -94,4 +100,28 @@ i {
     color: #fff;
     font-size: 2rem;
     padding: 5px;
+}
+
+/* about section */
+.about {
+    background-color: #14171f;
+}
+
+.aboutParent {
+    display: flex;
+}
+
+.aboutImage {
+    flex-basis: 10%;
+    margin-right: 10%;
+}
+
+.aboutImage img {
+    height: 400px;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
 }
