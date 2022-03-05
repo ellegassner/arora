@@ -145,6 +145,7 @@ i {
     display: flex;
     flex-direction: column;
     flex-basis: 75%;
+    align-self: center;
 }
 
 h2 {
@@ -152,6 +153,7 @@ h2 {
     font-size: 5.1rem;
     color: #fff;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .aboutInfo p {
@@ -162,6 +164,8 @@ h2 {
 .aboutInfo button {
     width: 25%;
 }
+
+/* latest Collection styling */
 
 .latestCollection {
     background-color: #201e21;
@@ -183,3 +187,38 @@ h2 {
     flex-basis: 32%;
     margin-bottom: 5%;
 }
+
+/* links section styling */
+.linkParent {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.catalogueLink,
+.eventsLink,
+.collaborationsLink {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.catalogueLink i,
+.eventsLink i,
+.collaborationsLink i {
+    font-size: 8rem;
+    color: #faba63;
+    margin: 5% auto;
+}
+
+.catalogueLink a,
+.eventsLink a,
+.collaborationsLink a {
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 0;
+} 
