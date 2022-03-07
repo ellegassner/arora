@@ -103,12 +103,13 @@ h1 {
     flex-basis: 40%;
 }
 
-.headerMainText p {
+h3 {
     font-family: 'Lato', sans-serif;
     font-size: 4.5rem;
     font-weight: 300;
     color: #faba63;
     line-height: 46px;
+    margin-top: 0;
 }
 
 .navSocial {
@@ -165,7 +166,7 @@ h2 {
 
 .aboutInfo button,
 .blog button {
-    width: 30%;
+    width: 35%;
 }
 
 /* latest Collection styling */
@@ -232,6 +233,7 @@ h2 {
 .blogOne,
 .blogTwo {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .blogOneImage,
@@ -244,5 +246,291 @@ h2 {
 .blogTwoInfo {
     flex-basis: 50%;
     padding: 5% 0 0 5%;
+    align-self: center;
 }
 
+/* footer section styling */
+.footerParent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.footerNav {
+    margin-top: 3%;
+}
+
+.footerNav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex-basis: 10%;
+    margin-top: 5%;
+}
+
+.footerNav li {
+    padding-bottom: 4%;
+}
+
+.footerNav a,
+h4 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+}
+
+.footerSubscribe {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 29%;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.userSubscribe {
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.userSubscribe input {
+    border: 0;
+    line-height: 4rem;
+    flex-basis: 70%;
+    font-size: 2rem;
+}
+
+.userSubscribe button {
+    background-color: black;
+    border: none;
+    margin: 0;
+    flex-basis: 30%;
+}
+
+.copyrightInfo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/* responsive design styling */
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 15rem;
+    }
+
+    .navSocial {
+        bottom: 35%;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+
+    .about p,
+    .blog p,
+    .contact p {
+        font-size: 1.5rem;
+    }
+
+    .about button,
+    .blog button {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    
+    .about {
+        margin: 0;
+    }
+
+    .catalogueLink i,
+    .eventsLink i,
+    .collaborationsLink i {
+    font-size: 5rem;
+    }
+
+    .blogOneInfo,
+    .blogTwoInfo {
+        padding: 0 0 0 5%;
+    }
+
+    .blogTwoImage {
+        padding-top: 5%;
+    }
+
+    .footerNav li {
+        padding-bottom: 8%;
+    }
+
+    .userSubscribe input {
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .footerInfo {
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .navMain ul {
+        justify-content: center;
+    }
+
+    .heroParent {
+        height: 400px;
+        background-position: center;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 8rem;
+        line-height: 9rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-top: 5%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .navSocial {
+        bottom: 25%;
+    }
+
+    i {
+    font-size: 1.5rem;
+    }
+
+    .aboutParent {
+        flex-direction: column;
+    }
+
+    .aboutImage {
+        margin-right: 0;
+    }
+
+    .aboutInfo h2,
+    .blogOneInfo h2,
+    .blogTwoInfo h2 {
+        text-align: center;
+    }
+
+    .aboutInfo button,
+    .blogOne button,
+    .blogTwo button {
+        align-self: center;
+        margin: 5% 0;
+    }
+
+    .catalogueLink i,
+    .eventsLink i,
+    .collaborationsLink i {
+        font-size: 3rem;
+    }
+
+    .catalogueLink a,
+    .eventsLink a,
+    .collaborationsLink a {
+        font-size: 1.8rem;
+    }
+
+    .blogOneInfo,
+    .blogTwoInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogOne {
+        flex-direction: column-reverse;
+    }
+
+    .blogTwo {
+        flex-direction: column;
+    }
+
+    .footerParent {
+        flex-direction: column;
+    }
+
+    .footerNav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerInfo {
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerMainText {
+        padding-top: 5%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .catalogueLink i,
+    .eventsLink i,
+    .collaborationsLink i {
+        font-size: 1.5rem;
+    }
+
+    .catalogueLink a,
+    .eventsLink a,
+    .collaborationsLink a {
+        font-size: 1.3rem;
+    }
+
+    .navMain {
+        padding-top: 10%;
+    }
+
+    .navMain a {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        padding: 20px;
+    }
+
+    .navSocial {
+        flex-direction: row;
+        bottom: 10%;
+        align-items: center;
+    }
+
+    .navSocial i {
+        font-size: 2.5rem;
+        padding: 0 15px;
+    }
+}
