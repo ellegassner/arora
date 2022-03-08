@@ -97,6 +97,7 @@ header {
 h1 {
     font-family: 'Italiana', serif;
     font-size: 16.2rem;
+    font-weight: 300;
     text-transform: uppercase;
     color: #fff;
     line-height: 140.4px;
@@ -391,19 +392,24 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    .navMain ul {
+    /* .navMain ul {
         justify-content: center;
-    }
+    } */
 
     .heroParent {
-        height: 400px;
-        background-position: center;
+        height: 50vh;
+        background-size: 100% auto;
+        background-position: top;
         margin-top: 0;
     }
 
+    .navMain a {
+        font-size: 1.5rem;
+    }
+
     h1 {
-        font-size: 8rem;
-        line-height: 9rem;
+        font-size: 10rem;
+        line-height: 10.3rem;
     }
 
     h2 {
@@ -486,19 +492,49 @@ h4 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+    .heroParent {
+        height: 70vh;
+        background-image: url("https://psd.hackeryou.com/assignment1-assets/arora/asset-2.jpg");
+        background-size: 100% auto;
+        /* background-position: top; */
+    }
+
     .headerMainText {
         padding-top: 5%;
+        padding-right: 5%;
     }
 
     h1 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top: 20%;
     }
 
     h3 {
         font-size: 2rem;
         line-height: 2rem;
+    }
+
+    .navSocial {
+        display: none;
+    }
+
+    .about {
+        margin-top: 10%;
+    }
+
+    .imageCollection ul {
+        justify-content: space-evenly;
+    }
+
+    .imageCollection li:last-child {
+        display: none;
+    }
+
+    .imageCollection li {
+        flex-basis: 45%;
+        margin-top: 10%;
     }
 
     .catalogueLink i,
