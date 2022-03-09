@@ -23,6 +23,19 @@ html {
     font-size: 62.5%;
 }
 
+.skipLink {
+    position: absolute;
+    left: -500px;
+    top: 5px;
+    z-index: 90;
+    background-color: #fff;
+    color: #14171f;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
 .wrapper {
     width: 90%;
     max-width: 1200px;
@@ -52,6 +65,12 @@ button {
     text-transform: uppercase;
     line-height: 29px;
     margin-top: 3%;
+}
+
+button:hover,
+button:focus {
+    background-color: black;
+    transition: 0.3s;
 }
 
 /* header styling */
@@ -171,7 +190,6 @@ h2 {
 }
 
 /* latest Collection styling */
-
 .latestCollection,
 .blog {
     background-color: #201e21;
@@ -277,10 +295,13 @@ h2 {
 .footerNav a,
 h4 {
     font-family: 'Italiana', serif;
-    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.footerNav a {
+    font-size: 2rem;
 }
 
 h4 {
@@ -346,10 +367,21 @@ h4 {
         background-size: 100% auto;
         background-position: top;
         margin-top: 0;
+        margin-bottom: 5%;
+    }
+
+    .headerMainText {
+        margin-top: 5%;
     }
     
     h1 {
-        font-size: 15rem;
+        font-size: 10rem;
+        line-height: 11rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        line-height: 5rem;
     }
 
     .navSocial {
@@ -358,6 +390,10 @@ h4 {
     
     h2 {
         font-size: 4rem;
+    }
+
+    .about {
+        margin: 0;
     }
 
     .about p,
@@ -371,18 +407,12 @@ h4 {
         width: 50%;
         margin-bottom: 5%;
     }
-    
-    .about {
-        margin: 0;
-    }
 
     .catalogueLink i,
     .eventsLink i,
     .collaborationsLink i {
-    font-size: 5.5rem;
+        font-size: 5.5rem;
     }
-
-
 
     .blogOneInfo,
     .blogTwoInfo {
@@ -471,7 +501,6 @@ h4 {
         margin: 5% 0;
     }
 
-
     .blogOneInfo,
     .blogTwoInfo {
         display: flex;
@@ -482,10 +511,7 @@ h4 {
         flex-direction: column-reverse;
     }
 
-    .blogTwo {
-        flex-direction: column;
-    }
-
+    .blogTwo,
     .footerParent {
         flex-direction: column;
     }
@@ -518,7 +544,6 @@ h4 {
         top: 0;
         right: 0;
     }
-
 
     .heroParent {
         height: 70vh;

@@ -13,16 +13,21 @@
 </head>
 <body>
     <header class="heroParent">
+        <!-- SkipLink First -->
+        <a href="#about" class="skipLink">Skip to About</a>
         <div class="wrapper">
-            <nav class="navMain">
+            <!-- Main Nav -->
+            <nav class="navMain" id="home">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Blog">Blog</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <!-- Mobile Nav -->
                 <div class="dropdown">
-                    <i class="fa-solid fa-angles-down"></i>
+                    <i class="fa-solid fa-angles-down" aria-hidden="true"></i>
+                    <span class="sr-only">Link to Dropdown Menu</span>
                 </div>
             </nav>
             <div class="headerTextParent">
@@ -33,13 +38,18 @@
             </div>
         </div>
         <nav class="navSocial">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-snapchat"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Link to Instagram</span>
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <span class="sr-only">Link to Facebook</span>
+            <i class="fa-brands fa-snapchat" aria-hidden="true"></i>
+            <span class="sr-only">Link to Snapchat</span>
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Link to Twitter</span>
         </nav>
-    </header>
-        
+    </header> <!-- header ends -->
+    
+    <!-- about section begins -->
     <section class="about" id="about">
         <div class="wrapper">
             <div class="aboutParent">
@@ -54,7 +64,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- about section ends -->
+    
+    <!-- collection section begins -->
     <section class="latestCollection">
         <div class="wrapper">
             <h2>Latest Collection</h2>
@@ -66,7 +78,9 @@
                 </ul>
         </div>
         </div>
-    </section>
+    </section> <!-- collection section ends -->
+    
+    <!-- link section begins -->
     <section>
         <div class="wrapper">
             <div class="linkParent">
@@ -84,7 +98,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- link section ends -->
+    
+    <!-- blog section begins -->
     <section class="blog" id="blog">
             <div class="blogOne">
                 <div class="blogOneInfo">
@@ -109,16 +125,18 @@
                     <button>Read More</button>
                 </div>
             </div>
-    </section>
+    </section> <!-- blog section ends -->
+    
+    <!-- footer section begins -->
     <footer class="contact" id="contact">
         <div class="wrapper">
             <div class="footerParent">
                 <div class="footerNav">
                     <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Blog">Blog</a></li>
-                        <li><a href="#Gallery">Gallery</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footerSubscribe">
@@ -141,6 +159,7 @@
                 <a href="https://junocollege.com/">Created at Juno College of Technology</a>
             </div>
         </div>
-    </footer>
+    </footer> <!-- footer section ends -->
+    
 </body>
 </html>
