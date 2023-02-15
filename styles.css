@@ -81,7 +81,7 @@ header {
 }
 
 .heroParent {
-    background-image: url(https://psd.hackeryou.com/assignment1-assets/arora/asset-3.jpg);
+    background-image: url("./assets/header-2.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -552,7 +552,7 @@ h4 {
 
     .heroParent {
         height: 70vh;
-        background-image: url("https://psd.hackeryou.com/assignment1-assets/arora/asset-2.jpg");
+        background-image: url("./assets/header-1.jpg");
         background-size: 100% auto;
     }
 
